@@ -1,4 +1,4 @@
-﻿/* Variáveis: identidade original do Bom Corte */
+/* Variáveis: identidade original do Bom Corte */
 :root {
   --wine: #853447;
   --wine-dark: #4b202b;
@@ -90,16 +90,6 @@ main { flex: 1; }
 .hero-footnote span { color: var(--sand); padding-inline: 12px; }
 .hero-link { display: block; position: relative; }
 .hero-image { width: 100%; height: auto; }
-/* Suaviza somente as bordas; o centro da foto mantém brilho e nitidez. */
-.hero-link::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background:
-    linear-gradient(to right, var(--charcoal), transparent 12%, transparent 88%, var(--charcoal)),
-    linear-gradient(to bottom, var(--charcoal), transparent 12%, transparent 88%, var(--charcoal));
-}
 .intro h2 { margin-bottom: 0; }
 .intro-text { font-size: 0.87rem; }
 .featured { background: var(--ink); color: var(--cream); }
