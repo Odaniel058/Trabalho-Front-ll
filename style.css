@@ -1003,7 +1003,39 @@ main {
 
 }
 
+/* Botão para voltar ao topo */
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--sand);
+  border-radius: 50%;
+  background: var(--charcoal);
+  color: var(--sand);
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgb(0 0 0 / 20%);
+}
+
+.back-to-top:hover {
+  background: var(--wine-dark);
+  color: var(--cream);
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .product-card, .navbar .nav-link {
     transition: none;
   }
